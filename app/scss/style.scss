@@ -1,6 +1,7 @@
 @import "vars";
 @import "fonts";
 @import "reset";
+@import "libs";
 @import "global";
 
 .header {
@@ -219,6 +220,64 @@
     font-size: 14px;
     color: $default;
     padding: 0 15px;
+  }
+}
+
+.top-slider {
+  &__wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 0;
+  }
+
+  &__content {
+    padding: 217px 0 300px;
+  }
+
+  &__title {
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+    text-transform: uppercase;
+    max-width: 470px;
+    margin-bottom: 26px;
+  }
+
+  &__text {
+    @extend %rubik-400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #243f4d;
+    max-width: 370px;
+    margin-bottom: 60px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: -74px;
+
+    li {
+      button {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-color: #fde3cc;
+        border-radius: 50%;
+        border: none;
+      }
+
+      &.slick-active {
+        button {
+          background-color: #fff;
+        }
+      }
+    }
+    li + li {
+      margin-left: 10px;
+    }
   }
 }
 
