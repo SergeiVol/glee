@@ -3,32 +3,29 @@
 @import "reset";
 @import "global";
 
-.header__inner {
-  padding: 48px 0 45px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-
-  &__text {
-    margin-left: 14px;
-    @extend %rubik-500;
-    font-size: 36px;
-    line-height: 58px;
-    color: $header-color;
+.header {
+  &__inner {
+    padding: 48px 0 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 .menu {
+  margin-left: 150px;
+
   &__list {
     display: flex;
-    column-gap: 35px;
   }
 
-  &__list-link {
+  &__item {
+    & + & {
+      margin-left: 35px;
+    }
+  }
+
+  &__link {
     @extend %rubik-500;
     font-size: 15px;
     line-height: 12px;
@@ -43,49 +40,65 @@
 
   &__link {
     display: flex;
-    position: relative;
     @extend %dmsans-400;
   }
 
-  &__search {
+  &__link--search {
     padding: 17px;
     margin-right: 21px;
     background-color: #edf1f4;
     border-radius: 50%;
+    margin-right: 22px;
   }
 
-  &__inner {
-    margin-right: 18px;
-    padding: 22px 41px 12px;
+  &__link--favourite {
+    padding: 22px 28px 13px 41px;
     background-color: #fcd7b6;
-    border-radius: 25px;
-    display: flex;
-    column-gap: 60px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
     position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      border-right: 1px solid #fde7d3;
+      height: 32px;
+      top: 9px;
+      right: 0%;
+    }
   }
 
-  &__inner::after {
-    content: "";
-    position: absolute;
-    border-right: 1px solid #fde7d3;
-    height: 32px;
-    top: 9px;
-    left: 50%;
-    right: 50%;
+  &__link--cart {
+    padding: 21px 41px 13px 30px;
+    background-color: #fcd7b6;
+    position: relative;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-right: 18px;
   }
 
   &__num {
-    padding: 3px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
     background-color: #fff;
     border-radius: 50%;
     color: #243f4d;
     font-size: 10px;
     position: absolute;
-    top: -10px;
-    right: -9px;
+    &--favourite {
+      top: 11px;
+      right: 17px;
+    }
+
+    &--cart {
+      top: 12px;
+      right: 31px;
+    }
   }
 
-  &__burger {
+  &__link--burger {
     background-color: $accent;
     border-radius: 50%;
     padding: 15px;
@@ -95,18 +108,18 @@
 .footer-top {
   padding: 70px 0 65px;
   display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid #dae4e9;
 
   &__contact {
     max-width: 200px;
     width: 100%;
-    margin-right: 100px;
+    margin-right: -27px;
   }
 
   &__nav {
     max-width: 170px;
     width: 100%;
-    margin-right: 130px;
   }
 
   &__item-form {
@@ -118,19 +131,12 @@
   }
 
   &__address {
-    margin-bottom: 5px;
+    margin-top: 25px;
     font-style: normal;
   }
 
-  &__address-link {
-    @extend %rubik-400;
-    font-size: 14px;
-    line-height: 24px;
-    color: $default;
-  }
-
   &__title {
-    padding: 26px 0 15px;
+    padding: 15px 0;
     @extend %dmsans-700;
     font-size: 16px;
     line-height: 21px;
@@ -143,6 +149,11 @@
     font-size: 14px;
     line-height: 32px;
     color: $default;
+  }
+
+  &__link--address {
+    line-height: 24px;
+    margin-bottom: 5px;
   }
 
   &__text {
@@ -163,12 +174,11 @@
     width: 100%;
     border: none;
     background-color: #fef7f0;
-  }
-
-  &__input::placeholder {
-    @extend %dmsans-400;
-    font-size: 12px;
-    color: #234969;
+    &::placeholder {
+      @extend %dmsans-400;
+      font-size: 12px;
+      color: #234969;
+    }
   }
 
   &__btn {
@@ -197,9 +207,11 @@
     display: flex;
   }
 
-  &__item + &__item {
-    border-left: 1px solid $default;
-    height: 15px;
+  &__item {
+    & + & {
+      border-left: 1px solid $default;
+      height: 15px;
+    }
   }
 
   &__link {
