@@ -8,6 +8,7 @@ body {
   font-size: 12px;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 
 main {
@@ -41,4 +42,11 @@ main {
     right: 19px;
     transform: translateY(-50%);
   }
+}
+
+.title {
+  @extend %dmsans-700;
+  font-size: 36px;
+  color: $title;
+  text-align: center;
 }
