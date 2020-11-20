@@ -8,6 +8,7 @@ body {
   font-size: 12px;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 
 main {
@@ -15,13 +16,37 @@ main {
 }
 
 .container {
-  max-width: 1800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.container-secondary {
-  max-width: 1200px;
-  margin: 0 auto;
+.container--big {
+  max-width: 1800px;
   padding: 0 15px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: $accent;
+  color: #fff;
+  padding: 22px 102px 20px 26px;
+  position: relative;
+  @extend %rubik-500;
+  font-size: 15px;
+  line-height: 12px;
+  &::after {
+    content: url("../images/icon/button-arrows.svg");
+    position: absolute;
+    top: 50%;
+    right: 19px;
+    transform: translateY(-50%);
+  }
+}
+
+.title {
+  @extend %dmsans-700;
+  font-size: 36px;
+  color: $title;
+  text-align: center;
 }
