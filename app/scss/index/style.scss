@@ -1,0 +1,145 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+@import "../components/header";
+@import "../components/footer";
+@import "../components/catalog";
+
+.top-slider {
+  &__img {
+    position: absolute;
+  }
+
+  &__content {
+    padding: 217px 0 300px;
+    position: relative;
+  }
+
+  &__title {
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+    text-transform: uppercase;
+    max-width: 470px;
+    margin-bottom: 26px;
+  }
+
+  &__text {
+    @extend %rubik-400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #243f4d;
+    max-width: 370px;
+    margin-bottom: 60px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+
+    li {
+      button {
+        position: relative;
+        bottom: 45px;
+        width: 30px;
+        height: 30px;
+        background-color: #fde3cc;
+        border-radius: 50%;
+        border: none;
+      }
+
+      &.slick-active {
+        button {
+          background-color: #fff;
+        }
+      }
+    }
+    li + li {
+      margin-left: 11px;
+    }
+  }
+}
+
+.order-info {
+  background-color: #fef7f0;
+  &__items {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    & + & {
+      border-left: 1px solid #e8e4df;
+    }
+    padding: 35px 0;
+    width: 33.333%;
+    display: flex;
+    justify-content: center;
+  }
+  &__img {
+    margin-right: 15px;
+  }
+
+  &__content {
+    align-items: center;
+    padding-left: 80px;
+    position: relative;
+    &::before {
+      position: absolute;
+    }
+  }
+
+  &__content--support {
+    max-width: 280px;
+    &::before {
+      content: url("../../images/icon/support.svg");
+      top: 13px;
+      left: 3px;
+    }
+  }
+
+  &__content--delivery {
+    max-width: 300px;
+    &::before {
+      content: url("../../images/icon/delivery.svg");
+      top: 22px;
+      left: 3px;
+    }
+  }
+
+  &__content--payment {
+    max-width: 300px;
+    &::before {
+      content: url("../../images/icon/payment.svg");
+      top: 15px;
+      left: -9px;
+    }
+  }
+
+  &__title {
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+  }
+
+  &__text {
+    @extend %dmsans-400;
+    color: #585858;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+.products-week {
+  padding: 70px 0;
+  &__title {
+    margin-bottom: 22px;
+  }
+}
+
+@import "media";
