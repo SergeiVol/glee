@@ -8,6 +8,17 @@ $(function (){
     // autoplaySpeed: 2000
   });
 
-  let mixer = mixitup('.catalog__items');
+
+  let mixer = mixitup('.products-week__items', {
+      selectors: {
+          control: '.products-week__button'
+      }
+  });
+
+  let mixer = mixitup('.new-design__items', {
+      selectors: {
+          control: '.new-design__button'
+      }
+  });
 
 });

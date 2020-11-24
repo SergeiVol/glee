@@ -38,7 +38,7 @@
     overflow: hidden;
     &:hover {
       .catalog__link-box {
-        transform: translateY(0);
+        transform: translateX(0);
       }
     }
   }
@@ -55,7 +55,7 @@
     position: absolute;
     display: flex;
     bottom: -10px;
-    transform: translateY(-530%);
+    transform: translateX(-300%);
     transition: transform 0.9s;
   }
 
