@@ -36,8 +36,12 @@ main {
   font-size: 15px;
   line-height: 12px;
   &::after {
-    content: url("../../images/icon/button-arrows.svg");
+    content: "";
     position: absolute;
+    background-image: url("../../images/icon/button-arrows.svg");
+    background-size: cover;
+    width: 22px;
+    height: 9px;
     top: 50%;
     right: 19px;
     transform: translateY(-50%);
