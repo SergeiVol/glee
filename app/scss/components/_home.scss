@@ -60,62 +60,29 @@
     background-color: #fef7f0;
     display: flex;
     justify-content: space-around;
+    padding: 46px 0 40px;
   }
 
   &__item {
-    & + & {
-      border-left: 1px solid #e8e4df;
-    }
-    padding: 35px 0;
-    width: 33.333%;
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
   }
   &__img {
-    margin-right: 15px;
+    margin-right: 23px;
   }
 
   &__content {
+    width: 213px;
     align-items: center;
-    padding-left: 80px;
     position: relative;
-    &::before {
-      position: absolute;
-    }
-
-    &--support {
-      max-width: 280px;
-      &::before {
-        content: url("../../images/icon/support.svg");
-        top: 13px;
-        left: 3px;
-      }
-    }
-
-    &--delivery {
-      max-width: 300px;
-      &::before {
-        content: url("../../images/icon/delivery.svg");
-        top: 22px;
-        left: 3px;
-      }
-    }
-
-    &--payment {
-      max-width: 300px;
-      &::before {
-        content: url("../../images/icon/payment.svg");
-        top: 15px;
-        left: -9px;
-      }
-    }
   }
 
   &__title {
     @extend %dmsans-700;
     font-size: 18px;
-    line-height: 40px;
+    line-height: 19px;
     color: #414141;
+    margin-bottom: 5px;
   }
 
   &__text {
