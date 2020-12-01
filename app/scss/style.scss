@@ -3,8 +3,9 @@
 @import "reset";
 @import "libs";
 @import "global";
-@import "../components/header";
-@import "../components/footer";
-@import "../components/articles";
-@import "../index/home";
-@import "../about/about";
+@import "components/header";
+@import "components/footer";
+@import "components/articles";
+@import "index/index";
+@import "about/about";
+@import "components/breadcrumbs";
