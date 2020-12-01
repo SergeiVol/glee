@@ -25,11 +25,11 @@
       top: 4px;
     }
   }
+}
 
-  &__items {
-    display: flex;
-    justify-content: space-between;
-  }
+.blog {
+  display: flex;
+  justify-content: space-between;
 
   &__item {
     max-width: 370px;
@@ -86,8 +86,7 @@
     display: flex;
   }
 
-  &__date,
-  &__autor {
+  &__info-publication {
     @extend %rubik-400;
     line-height: 30px;
     color: #222933;
@@ -103,28 +102,16 @@
       top: 9px;
       left: 0;
     }
-  }
-
-  &__date {
-    margin-right: 25px;
-    &::before {
-      background-image: url("../../images/icon/calendar.svg");
+    &--date {
+      margin-right: 25px;
+      &::before {
+        background-image: url("../../images/icon/calendar.svg");
+      }
     }
-  }
-  &__autor {
-    &::before {
-      background-image: url("../../images/icon/user.svg");
+    &--autor {
+      &::before {
+        background-image: url("../../images/icon/user.svg");
+      }
     }
-  }
-}
-
-.client {
-  padding: 265px 0 87px;
-  background-color: #fef7f0;
-  margin-top: -169px;
-  &__list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
   }
 }

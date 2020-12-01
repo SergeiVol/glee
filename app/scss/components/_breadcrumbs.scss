@@ -1,0 +1,45 @@
+.breadcrumbs {
+  text-align: center;
+  padding: 35px 0 30px;
+  background-color: #edf1f4;
+  &__title {
+    @extend %rubik-300;
+    font-size: 36px;
+    line-height: 24px;
+    color: #222933;
+    margin-bottom: 12px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    margin-right: 10px;
+    position: relative;
+    &::after {
+      content: "/";
+      position: relative;
+      top: 0;
+      right: -4px;
+      @extend %rubik-400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #888c91;
+    }
+    &:last-child {
+      margin-right: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #888c91;
+  }
+}

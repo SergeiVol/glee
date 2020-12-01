@@ -42,11 +42,11 @@
     font-size: 14px;
     line-height: 32px;
     color: $default;
-  }
 
-  &__link--address {
-    line-height: 24px;
-    margin-bottom: 5px;
+    &--address {
+      line-height: 24px;
+      margin-bottom: 5px;
+    }
   }
 
   &__text {
