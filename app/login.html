@@ -102,13 +102,13 @@
           <form class="login__form" action="#">
             <label class="login__label" for="">
               Username or email address *
-              <input class="login__input" type="text" type="name email" required />
+              <input class="login__input" name="email" type="email" required />
             </label>
             <label class="login__label" for="">
               Password *
-              <input class="login__input" type="password" type="password" required />
+              <input class="login__input" name="password" type="password" required />
             </label>
-            <button class="login__btn">Login</button>
+            <button class="login__btn" type="submit">Login</button>
             <div class="login__box">
               <label class="login__label login__label--checkbox">
                 <input type="checkbox" />
@@ -116,13 +116,13 @@
               </label>
               <a class="login__lost-password" href="#">Lost your password?</a>
             </div>
-            <p class="login__text">Not registered? No problem</p>
-            <button class="login__btn login__btn--create">Create an account</button>
           </form>
+          <p class="login__text">Not registered? No problem</p>
+          <button class="login__btn login__btn--create">Create an account</button>
         </div>
       </section>
 
-      <div class="client">
+      <div class="client client--single">
         <div class="container">
           <ul class="client__list">
             <li class="client__item">

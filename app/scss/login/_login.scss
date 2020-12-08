@@ -4,13 +4,11 @@
   margin: 0 auto;
   padding: 115px 0;
 
-  &__form {
-  }
-
   &__label {
     margin-bottom: 25px;
     display: block;
     @extend %login-text;
+
     &--checkbox {
       cursor: pointer;
     }
