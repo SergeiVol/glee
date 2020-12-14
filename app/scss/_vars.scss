@@ -54,3 +54,18 @@ $about: #243f4d;
   line-height: 24px;
   color: #436372;
 }
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+%filter-text {
+  @extend %rubik-400;
+  font-size: 16px;
+  line-height: 43px;
+  color: $about;
+}
