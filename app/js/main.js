@@ -4,6 +4,12 @@ $(function () {
     ratedFill: "#ffcc00",
   });
 
+  $(".products-item__star").rateYo({
+    starWidth: "18px",
+    ratedFill: "#ffcc00",
+    spacing: "13px",
+  });
+
   $(".filter-price__input").ionRangeSlider({
     type: "double",
     onStart: function (data) {

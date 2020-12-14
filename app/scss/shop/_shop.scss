@@ -185,41 +185,8 @@
     grid-column-gap: 30px;
     grid-row-gap: 40px;
     margin-bottom: 105px;
-  }
-}
-
-.paginations {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &__link {
-    @extend %rubik-400;
-    font-size: 16px;
-    color: $about;
-    padding: 15px 20px;
-    border: 1px solid $accent;
-
-    &--active {
-      background-color: $accent;
-      color: #ffffff;
-    }
-  }
-
-  &__prev {
-    display: none;
-    margin-right: 15px;
-  }
-
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 15px;
-  }
-
-  &__item {
-    & + & {
-      margin-left: 15px;
+    &--list {
+      display: block;
     }
   }
 }
