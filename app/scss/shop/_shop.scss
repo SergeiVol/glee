@@ -1,0 +1,195 @@
+.shop {
+  padding: 110px 0 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+
+  &__filter {
+    max-width: 270px;
+    width: 100%;
+  }
+}
+
+.filter {
+  &__title {
+    @extend %dmsans-700;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 43px;
+    color: $about;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 14px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 39px;
+      height: 2px;
+      background-color: $accent;
+      top: 20px;
+      right: -55px;
+    }
+  }
+  &__item {
+    @extend %filter-text;
+  }
+}
+
+.filter-category {
+  margin-bottom: 45px;
+  &__label {
+    cursor: pointer;
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+
+    &:checked + .filter-category__checkbox {
+      background-color: #edf1f4;
+    }
+  }
+
+  &__checkbox {
+    position: relative;
+    display: block;
+    padding: 0 22px 0 15px;
+    border-radius: 5px;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../images/icon/arrows-right.svg");
+      width: 5px;
+      height: 10px;
+      top: 15px;
+      right: 20px;
+    }
+  }
+}
+
+.filter-price {
+  margin-bottom: 45px;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.irs--flat .irs-handle {
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: $accent;
+}
+
+.irs--flat .irs-line {
+  top: 10px;
+  height: 3px;
+  background-color: #c2d2db;
+  border-radius: 4px;
+}
+
+.irs--flat .irs-bar {
+  top: 10px;
+  height: 4px;
+  background-color: #a3bbc8;
+}
+
+.irs-min,
+.irs-max {
+  display: none;
+}
+.irs-single {
+  display: none;
+}
+
+.irs--flat .irs-handle > i:first-child {
+  display: none;
+}
+
+.irs-from,
+.irs-to {
+  display: none;
+}
+
+.filter-brend {
+  margin-bottom: 41px;
+  &__label {
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-brend__checkbox {
+      background-color: #edf1f4;
+      border-radius: 5px;
+      .filter-brend__quantity {
+        color: #243f4d;
+      }
+    }
+  }
+
+  &__checkbox {
+    padding: 0 22px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  &__quantity {
+    color: #b3b3b3;
+  }
+}
+
+.filter-recent {
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    max-height: 70px;
+    margin-bottom: 24px;
+  }
+
+  &__img {
+    margin-right: 20px;
+  }
+
+  &__content {
+    @extent %rubik-400;
+    color: #333;
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__price {
+    font-size: 15px;
+    line-height: 27px;
+  }
+}
+
+.jq-ry-container {
+  padding: 0;
+}
+
+.shop-content {
+  width: 100%;
+  max-width: 870px;
+  &__inner {
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+    margin-bottom: 105px;
+    &--list {
+      display: block;
+    }
+  }
+}

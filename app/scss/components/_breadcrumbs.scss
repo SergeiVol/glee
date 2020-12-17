@@ -1,13 +1,14 @@
 .breadcrumbs {
   text-align: center;
-  padding: 35px 0 30px;
+  padding: 28px 0;
   background-color: #edf1f4;
+
   &__title {
     @extend %rubik-300;
     font-size: 36px;
-    line-height: 24px;
+    line-height: 46px;
     color: #222933;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
   }
 
   &__list {
@@ -28,8 +29,10 @@
       line-height: 24px;
       color: #888c91;
     }
+
     &:last-child {
       margin-right: 0;
+
       &::after {
         display: none;
       }

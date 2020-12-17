@@ -1,14 +1,16 @@
 .client {
-  padding: 87px 0 87px;
+  padding: 265px 0 87px;
+  margin-top: -169px;
   background-color: #fef7f0;
+
   &__list {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
 
-  &--influx {
-    padding: 265px 0 87px;
-    margin-top: -169px;
+  &--single {
+    padding: 78px 0 87px;
+    margin-top: 0;
   }
 }
