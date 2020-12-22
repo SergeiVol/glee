@@ -135,12 +135,17 @@
     margin-bottom: 20px;
   }
 
+  &__img-link {
+    margin-right: 21px;
+    display: block;
+    min-width: 71px;
+  }
+
   &__img {
     width: 71px;
     height: 71px;
     overflow: cover;
     display: block;
-    margin-right: 21px;
   }
 
   &__content-title {
