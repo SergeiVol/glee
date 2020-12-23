@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glee</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container--big">
+        <div class="header__inner">
+          <a class="logo" href="">
+            <img class="logo__img" src="images/logo.svg" alt="logo" />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">Home +</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="about.html">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Services</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Pages +</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">News</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="nav-bar">
+            <a class="nav-bar__link nav-bar__link--search" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281" viewBox="0 0 15.28 15.281">
+                <path
+                  fill="#243f4d"
+                  fill-rule="evenodd"
+                  d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                  transform="translate(-1544.72 -66)"
+                />
+              </svg>
+            </a>
+            <a class="nav-bar__link nav-bar__link--favourite" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17.875" height="15.531" viewBox="0 0 17.875 15.531">
+                <path
+                  fill="#243f4d"
+                  fill-rule="evenodd"
+                  d="M9.913,16.244a0.706,0.706,0,0,1-.279-0.056c-0.353-.15-8.65-3.749-8.65-10.76a4.818,4.818,0,0,1,8.93-2.4A4.818,4.818,0,0,1,18.842,5.4c0,7.034-8.3,10.634-8.649,10.783A0.709,0.709,0,0,1,9.913,16.244ZM5.8,2.106A3.424,3.424,0,0,0,2.393,5.452c0,5.407,6.125,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.409,3.409,0,0,0-6.816.024,0.7,0.7,0,0,1-.7.669h0a0.7,0.7,0,0,1-.7-0.669A3.424,3.424,0,0,0,5.8,2.106Z"
+                  transform="translate(-0.969 -0.719)"
+                />
+              </svg>
+              <span class="nav-bar__num nav-bar__num--favourite">0</span>
+            </a>
+            <a class="nav-bar__link nav-bar__link--cart" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969" viewBox="0 0 18.94 16.969">
+                <path
+                  fill="#243f4d"
+                  fill-rule="evenodd"
+                  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                  transform="translate(-1716 -69)"
+                />
+              </svg>
+              <span class="nav-bar__num nav-bar__num--cart">0</span>
+            </a>
+            <a class="nav-bar__link nav-bar__link--burger" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20.031" viewBox="0 0 20.03 20.031">
+                <path
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  class="cls-1"
+                  d="M1813.15,67.881a2.146,2.146,0,1,1,2.14-2.145A2.145,2.145,0,0,1,1813.15,67.881Zm0,7.869a2.146,2.146,0,1,1,2.14-2.147A2.146,2.146,0,0,1,1813.15,75.75Zm0,7.868a2.146,2.146,0,1,1,2.14-2.146A2.145,2.145,0,0,1,1813.15,83.618Zm7.86-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1821.01,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1821.01,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1821.01,83.618Zm7.87-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1828.88,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1828.88,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1828.88,83.618Z"
+                  transform="translate(-1811 -63.594)"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="breadcrumbs">
+        <h2 class="breadcrumbs__title">Blog Details</h2>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="blog.html">Blog</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link">Blog details</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="blog-page blog-details">
+        <div class="container">
+          <div class="blog-page__inner">
+            <div class="blog-page__content blog-details__content">
+              <div class="blog-details__box-img">
+                <img class="blog-page__img" src="images/blog/blog-page-1.jpg" alt="blog images" />
+                <div class="blog__info blog-page__info">
+                  <time class="blog__info-publication blog__info-publication--date blog-page__info-publication">28 JANUARY, 2020</time>
+                  <a class="" href="#">
+                    <span class="blog__info-publication blog__info-publication--autor blog-page__info-publication">by admin</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="blog-details__text">
+                <h4>Fonsectetur adipisicing eiusmod</h4>
+                <h5>
+                  Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia Lorem ipsum dolor sit
+                  amet, consectetur adipisicing elit,
+                </h5>
+                <p>
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <blockquote>
+                  Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris
+                  <span>Wiusmod tempor </span>
+                </blockquote>
+                <img class="blog-details__img-left" src="images/blog/blog-details/1.jpg" alt="" />
+                <h5>Riusmod tempor incididunt</h5>
+                <p>
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                </p>
+                <h5>Kajtsal jervcm eoaspckred</h5>
+                <p>
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                </p>
+              </div>
+
+              <div class="blog-details__autor">
+                <div class="blog-details__autor-box">
+                  <img class="blog-details__autor-img" src="images/blog/autor/1.jpg" alt="" />
+                  <div class="blog-details__name-box">
+                    <h5 class="blog-details__name">Mark N. Hernandez</h5>
+                    <span class="blog-details__position">Designer</span>
+                  </div>
+                </div>
+                <div class="blog-details__social-box">
+                  <div class="blog-details__tags">
+                    <span class="blog-details__tags-title">Tags:</span>
+                    <a class="blog-details__tags-link" href="#">All</a>,
+                    <a class="blog-details__tags-link" href="#">Trending</a>
+                  </div>
+                  <div class="blog-details__share">
+                    <span class="blog-details__share-title">Share:</span>
+                    <a class="blog-details__share-link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="8.13" height="15.44" viewBox="0 0 8.13 15.44">
+                        <path
+                          fill="#a1a1a1"
+                          fill-rule="evenodd"
+                          d="M1069.19,1899.12c0.41,0,.83.03,1.24,0.05,0.27,0.01.54,0.04,0.79,0.07l-0.02,2.49H1071c-0.27,0-.54-0.01-0.82-0.01-0.2,0-.4.01-0.61,0.01a1.041,1.041,0,0,0-1.18,1.09c-0.02.6-.03,1.9-0.03,1.97,0.03,0,.68.01,1.34,0.01,0.32,0,.64,0,0.87-0.01h0.53c-0.13.96-.26,1.87-0.39,2.8h-2.35l-0.06,6.97h-2.89l0.06-6.99h-2.37l0.02-2.77h2.38v-0.21c0.01-.56,0-1.12.02-1.68a7.581,7.581,0,0,1,.09-1.06,3.145,3.145,0,0,1,1.27-2.08,3.6,3.6,0,0,1,2.08-.64C1069.04,1899.13,1069.11,1899.12,1069.19,1899.12Z"
+                          transform="translate(-1063.09 -1899.12)"
+                        />
+                      </svg>
+                    </a>
+                    <a class="blog-details__share-link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14.31" height="11.62" viewBox="0 0 14.31 11.62">
+                        <path
+                          fill="#a1a1a1"
+                          fill-rule="evenodd"
+                          d="M1109.69,1902.28c-0.11.16-.21,0.3-0.33,0.45a5.7,5.7,0,0,1-1.07,1.01l-0.05.09a8.22,8.22,0,0,1-.07,1.31,8.818,8.818,0,0,1-.77,2.61,8.712,8.712,0,0,1-1.6,2.3,7.864,7.864,0,0,1-4.05,2.25,8.967,8.967,0,0,1-1.64.2h-0.26a8.172,8.172,0,0,1-4.42-1.27l-0.07-.04a5.322,5.322,0,0,0,.69.04,6.049,6.049,0,0,0,2.25-.44,5.834,5.834,0,0,0,1.4-.82,2.9,2.9,0,0,1-2.71-2.03,3.287,3.287,0,0,0,.54.05,2.82,2.82,0,0,0,.71-0.09l0.05-.02a2.9,2.9,0,0,1-2.32-2.9,2.914,2.914,0,0,0,1.31.35,2.914,2.914,0,0,1-1.2-1.78,2.877,2.877,0,0,1,.34-2.12,8.311,8.311,0,0,0,6.02,3.07c-0.02-.12-0.03-0.22-0.05-0.33a2.8,2.8,0,0,1,.45-1.91,2.853,2.853,0,0,1,1.99-1.33,3.439,3.439,0,0,1,.54-0.04,2.833,2.833,0,0,1,2.03.86,0.139,0.139,0,0,0,.1.05,0.09,0.09,0,0,0,.05-0.01,5.547,5.547,0,0,0,1.71-.65l0.04-.02a2.919,2.919,0,0,1-1.25,1.6A5.859,5.859,0,0,0,1109.69,1902.28Z"
+                          transform="translate(-1095.38 -1900.88)"
+                        />
+                      </svg>
+                    </a>
+                    <a class="blog-details__share-link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13.62" height="13.66" viewBox="0 0 13.62 13.66">
+                        <path
+                          fill="#a1a1a1"
+                          fill-rule="evenodd"
+                          d="M1133.34,1913.46a3.431,3.431,0,0,1-2.72-2.98,38.588,38.588,0,0,1,.13-7.67,3.483,3.483,0,0,1,2.98-2.65,27.381,27.381,0,0,1,3.42-.15c1.28,0,2.56.03,3.33,0.07a3.78,3.78,0,0,1,2.5,1.02,3.638,3.638,0,0,1,1.09,2.33,43.2,43.2,0,0,1-.15,7.35,3.485,3.485,0,0,1-3.02,2.73,32.586,32.586,0,0,1-3.76.15A23.5,23.5,0,0,1,1133.34,1913.46Zm0.73-12.12a2.349,2.349,0,0,0-2.18,2.06,45.652,45.652,0,0,0-.05,6.9,2.224,2.224,0,0,0,1.69,1.93,20.971,20.971,0,0,0,3.67.2c1.43,0,2.84-.05,3.37-0.1a2.341,2.341,0,0,0,2.18-2.07,48.648,48.648,0,0,0,.09-6.71,2.3,2.3,0,0,0-2.05-2.18,30.906,30.906,0,0,0-3.41-.13C1136.02,1901.24,1134.66,1901.28,1134.07,1901.34Zm-0.25,5.5a3.517,3.517,0,0,1,3.53-3.5,3.459,3.459,0,0,1,3.47,3.5,3.53,3.53,0,0,1-3.53,3.5A3.466,3.466,0,0,1,1133.82,1906.84Zm1.23-.03a2.252,2.252,0,0,0,2.23,2.29h0.02a2.284,2.284,0,0,0,2.28-2.24,2.237,2.237,0,0,0-2.22-2.29h-0.02A2.293,2.293,0,0,0,1135.05,1906.81Zm5.12-3.61a0.824,0.824,0,0,1,.82-0.82H1141a0.815,0.815,0,0,1,.81.82,0.826,0.826,0,0,1-.83.82A0.815,0.815,0,0,1,1140.17,1903.2Z"
+                          transform="translate(-1130.5 -1900)"
+                        />
+                      </svg>
+                    </a>
+                    <a class="blog-details__share-link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="11.41" viewBox="0 0 18.03 11.41">
+                        <path
+                          fill="#a1a1a1"
+                          fill-rule="evenodd"
+                          d="M1170.27,1912.73a5.653,5.653,0,0,1-5.24-4.49,5.314,5.314,0,0,1-.11-1.54,5.573,5.573,0,0,1,1.29-3.25,5.683,5.683,0,0,1,3.07-1.96,4.271,4.271,0,0,1,.94-0.14c0.18-.01.36-0.02,0.55-0.02a5.311,5.311,0,0,1,2.69.74,6.276,6.276,0,0,1,1.01.74c-0.57.56-1.11,1.11-1.67,1.66a3.053,3.053,0,0,0-1.67-.81,4.051,4.051,0,0,0-.48-0.04,3.429,3.429,0,0,0-3.29,2.67,2.977,2.977,0,0,0-.08,1.03,3.429,3.429,0,0,0,2.33,2.97,3.365,3.365,0,0,0,1,.15c0.08,0,.15-0.01.23-0.01a3.427,3.427,0,0,0,1.67-.53,2.65,2.65,0,0,0,1.13-1.72h-3.05c0-.08.01-1.5,0.01-2.2l0.01-.09h5.36a6.171,6.171,0,0,1-1.01,4.81,5.029,5.029,0,0,1-2.82,1.84,6.2,6.2,0,0,1-1.54.2C1170.49,1912.74,1170.38,1912.73,1170.27,1912.73Zm10.59-3.22h-1.51v-0.06l0.02-1.93h-1.99v-0.06l0.01-1.44v-0.06h1.99l0.01-1.93,0.01-.06h1.55v0.06l-0.01,1.93h1.99v0.06l-0.01,1.44v0.06h-1.99l-0.02,1.93v0.06h-0.05Z"
+                          transform="translate(-1164.91 -1901.34)"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blog-details-comments comments">
+                <h4 class="comments__title"><span>3</span> Comments</h4>
+                <div class="comments__item">
+                  <img class="comments__img" src="images/comment/1.jpg" alt="images person" />
+                  <div class="comments__content-box">
+                    <div class="comments__content-top">
+                      <h5 class="comments__name">Delores G. Roberts</h5>
+                      <date class="comments__date">Add 11 Oct 2020</date>
+                    </div>
+                    <p class="comments__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices
+                    </p>
+                    <a class="comments__link" href="#">Reply</a>
+                  </div>
+                </div>
+
+                <div class="comments__item comments__item--reply">
+                  <img class="comments__img" src="images/comment/2.jpg" alt="images person" />
+                  <div class="comments__content-box">
+                    <div class="comments__content-top">
+                      <h5 class="comments__name">Shannon S. Williams</h5>
+                      <date class="comments__date">Add 11 Oct 2020</date>
+                    </div>
+                    <p class="comments__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices
+                    </p>
+                    <a class="comments__link" href="#">Reply</a>
+                  </div>
+                </div>
+
+                <div class="comments__item">
+                  <img class="comments__img" src="images/comment/3.jpg" alt="images person" />
+                  <div class="comments__content-box">
+                    <div class="comments__content-top">
+                      <h5 class="comments__name">Nicholas R. Coley</h5>
+                      <date class="comments__date">Add 11 Oct 2020</date>
+                    </div>
+                    <p class="comments__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices
+                    </p>
+                    <a class="comments__link" href="#">Reply</a>
+                  </div>
+                </div>
+              </div>
+
+              <form class="comments-form">
+                <h4 class="comments-form__title">Leave A Comment</h4>
+                <div class="comments-form__box-input">
+                  <input class="comments-form__name" type="name" name="name" placeholder="Name" />
+                  <input class="comments-form__email" type="email" name="email" placeholder="Email address" />
+                </div>
+                <textarea class="comments-form__textarea" placeholder="Comment"></textarea>
+                <button class="comments-form__btn" type="submit">Post Comment</button>
+              </form>
+            </div>
+
+            <div class="blog-page__aside">
+              <div class="blog-page__search">
+                <form class="blog-page__search-form" action="#">
+                  <input class="blog-page__search-input" type="text" />
+                  <button class="blog-page__search-btn" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17.03" height="17" viewBox="0 0 17.03 17">
+                      <path
+                        fill="#094074"
+                        fill-rule="evenodd"
+                        d="M1529.25,418.92a0.6,0.6,0,0,1-.42-0.174l-5.3-5.3a6.515,6.515,0,1,1,.84-0.839l5.3,5.3a0.6,0.6,0,0,1,0,.839A0.6,0.6,0,0,1,1529.25,418.92Zm-9.9-15.833a5.344,5.344,0,1,0,5.35,5.344A5.351,5.351,0,0,0,1519.35,403.087Z"
+                        transform="translate(-1512.81 -401.906)"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+
+              <div class="filter__item filter-category blog-page__aside-item">
+                <h4 class="filter__title">CATEGORY</h4>
+                <form class="filter-category__form" action="#">
+                  <label class="filter-category__label">
+                    <input class="filter-category__input" type="checkbox" />
+                    <span class="filter-category__checkbox">Chair</span>
+                  </label>
+
+                  <label class="filter-category__label">
+                    <input class="filter-category__input" type="checkbox" />
+                    <span class="filter-category__checkbox">Table</span>
+                  </label>
+
+                  <label class="filter-category__label">
+                    <input class="filter-category__input" type="checkbox" />
+                    <span class="filter-category__checkbox">Lamp</span>
+                  </label>
+
+                  <label class="filter-category__label">
+                    <input class="filter-category__input" type="checkbox" />
+                    <span class="filter-category__checkbox">Watch</span>
+                  </label>
+
+                  <label class="filter-category__label">
+                    <input class="filter-category__input" type="checkbox" />
+                    <span class="filter-category__checkbox">Clock</span>
+                  </label>
+                </form>
+              </div>
+
+              <div class="recent-post">
+                <h4 class="recent-post__title filter__title">Recent Posts</h4>
+                <div class="recent-post__item">
+                  <a class="recent-post__img-link" href="#"> <img class="recent-post__img" src="images/blog/aside-post-1.jpg" alt="plog img" /></a>
+                  <div class="recent-post__content">
+                    <a class="recent-post__content-link" href="#">
+                      <h5 class="recent-post__content-title">Corem ipsum dolor tetur adipisicing elit</h5>
+                      <time class="recent-post__date">28 JANUARY, 2020</time>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="recent-post__item">
+                  <a class="recent-post__img-link" href="#"> <img class="recent-post__img" src="images/blog/aside-post-2.jpg" alt="plog img" /></a>
+                  <div class="recent-post__content">
+                    <a class="recent-post__content-link" href="#">
+                      <h5 class="recent-post__content-title">Corem ipsum dolor tetur adipisicing elit</h5>
+                      <time class="recent-post__date">28 JANUARY, 2020</time>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="recent-post__item">
+                  <a class="recent-post__img-link" href="#"> <img class="recent-post__img" src="images/blog/aside-post-3.jpg" alt="plog img" /></a>
+                  <div class="recent-post__content">
+                    <a class="recent-post__content-link" href="#">
+                      <h5 class="recent-post__content-title">Corem ipsum dolor tetur adipisicing elit</h5>
+                      <time class="recent-post__date">28 JANUARY, 2020</time>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="recent-post__item">
+                  <a class="recent-post__img-link" href="#"> <img class="recent-post__img" src="images/blog/aside-post-4.jpg" alt="plog img" /></a>
+                  <div class="recent-post__content">
+                    <a class="recent-post__content-link" href="#">
+                      <h5 class="recent-post__content-title">Corem ipsum dolor tetur adipisicing elit</h5>
+                      <time class="recent-post__date">28 JANUARY, 2020</time>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="client client--single">
+        <div class="container">
+          <ul class="client__list">
+            <li class="client__item">
+              <img class="client__logo" src="images/client/1.png" alt="client logo" />
+            </li>
+            <li class="client__item">
+              <img class="client__logo" src="images/client/2.png" alt="client logo" />
+            </li>
+            <li class="client__item">
+              <img class="client__logo" src="images/client/3.png" alt="client logo" />
+            </li>
+            <li class="client__item">
+              <img class="client__logo" src="images/client/4.png" alt="client logo" />
+            </li>
+            <li class="client__item">
+              <img class="client__logo" src="images/client/5.png" alt="client logo" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top__contact">
+            <a class="logo footer-top__logo" href="">
+              <img class="logo__img" src="images/logo.svg" alt="logo" />
+            </a>
+            <address class="footer-top__address">
+              <a class="footer-top__link footer-top__link--address" href="">ADDRESS: 4772 Wines Lane Houston, TX 77032</a>
+              <a class="footer-top__link" href="tel:8323475843">TELEPHONE: +832-347-5843</a>
+              <a class="footer-top__link" href="mailto:contact@Glee.com">EMAIL: contact@Glee.com</a>
+            </address>
+          </div>
+
+          <div class="footer-top__nav">
+            <h4 class="footer-top__title">services</h4>
+            <ul class="footer-top__list">
+              <li class="footer-top__list-item">
+                <a class="footer-top__link" href="#">About us</a>
+              </li>
+              <li class="footer-top__list-item">
+                <a class="footer-top__link" href="#">Return Policy</a>
+              </li>
+              <li class="footer-top__list-item">
+                <a class="footer-top__link" href="#">Our Blog</a>
+              </li>
+              <li class="footer-top__list-item">
+                <a class="footer-top__link" href="#">Contact Us</a>
+              </li>
+              <li class="footer-top__list-item">
+                <a class="footer-top__link" href="#">Terms & Condition</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-top__nav">
+            <h4 class="footer-top__title">Account</h4>
+            <ul class="footer-top__list">
+              <li class="footer-top__list-item">
+                <a class="footer-top__link" href="#">Your Account</a>
+              </li>
+              <li class="footer-top__list-item">
+                <a class="footer-top__link" href="#">Checkout</a>
+              </li>
+              <li class="footer-top__list-item">
+                <a class="footer-top__link" href="#">Login</a>
+              </li>
+              <li class="footer-top__list-item">
+                <a class="footer-top__link" href="#">Register</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-top__item-form">
+            <h4 class="footer-top__title">newsletter</h4>
+            <p class="footer-top__text">Subscribe by our newsletter and get update protidin.</p>
+            <form class="footer-top__form" action="#">
+              <input class="footer-top__input" name="email" type="email" placeholder="Email address" required />
+              <button class="footer-top__btn" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-bottom__copy">©2020 CopyRight Example. All rights reserved.</p>
+          <div class="footer-bottom__menu">
+            <ul class="footer-bottom__list">
+              <li class="footer-bottom__item">
+                <a class="footer-bottom__link" href="#">Home</a>
+              </li>
+              <li class="footer-bottom__item">
+                <a class="footer-bottom__link" href="#">About</a>
+              </li>
+              <li class="footer-bottom__item">
+                <a class="footer-bottom__link" href="#">Blog</a>
+              </li>
+              <li class="footer-bottom__item">
+                <a class="footer-bottom__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

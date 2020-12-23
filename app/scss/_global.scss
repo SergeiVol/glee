@@ -32,6 +32,8 @@ main {
   @extend %rubik-500;
   font-size: 15px;
   line-height: 12px;
+  cursor: pointer;
+
   &::after {
     content: "";
     position: absolute;
