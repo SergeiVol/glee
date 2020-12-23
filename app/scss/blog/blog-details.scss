@@ -1,0 +1,162 @@
+.blog-details {
+  &__box-img {
+    position: relative;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    border-bottom: 2px solid #ebebeb;
+    padding-bottom: 9px;
+    h4 {
+      @extend %rubik-400;
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    h5 {
+      @extend %rubik-500;
+      font-size: 16px;
+      line-height: 30px;
+      color: $about;
+      margin-bottom: 14px;
+    }
+
+    p {
+      @extend %rubik-400;
+      font-size: 16px;
+      line-height: 30px;
+      color: $about;
+      margin-bottom: 35px;
+    }
+    blockquote {
+      padding: 18px 40px 17px 35px;
+      margin-bottom: 45px;
+      background-color: #edf1f4;
+      border-left: 6px solid #a3bbc8;
+      @extend %rubik-400;
+      font-size: 16px;
+      line-height: 30px;
+      color: $about;
+      span {
+        margin-top: 7px;
+        display: block;
+        padding-left: 42px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 4px;
+          background-color: #a3bbc8;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+
+  &__img-left {
+    width: 322px;
+    height: 209px;
+    object-fit: cover;
+    float: left;
+    margin-right: 33px;
+    margin-bottom: 33px;
+  }
+
+  &__img-right {
+    width: 322px;
+    height: 209px;
+    object-fit: cover;
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 45px;
+  }
+
+  &__autor {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 22px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  &__autor-box {
+    display: flex;
+  }
+
+  &__autor-img {
+    width: 76px;
+    height: 76px;
+    object-fit: cover;
+    margin-right: 28px;
+  }
+
+  &__name-box {
+    padding: 10px 0;
+  }
+
+  &__name {
+    display: block;
+    @extend %rubik-500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  &__position {
+    display: block;
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #666;
+  }
+
+  &__social-box {
+    padding: 10px 0;
+  }
+
+  &__tags {
+    margin-bottom: 5px;
+  }
+
+  &__tags-title,
+  &__share-title {
+    @extend %rubik-500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333;
+  }
+
+  &__tags-title {
+    margin-right: 35px;
+  }
+
+  &__share-title {
+    margin-right: 15px;
+  }
+
+  &__tags-link {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #999;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__share-link {
+    margin-right: 20px;
+    transition: fill 0.3s;
+    &:hover {
+      path {
+        fill: $accent;
+      }
+    }
+  }
+}
