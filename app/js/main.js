@@ -1,4 +1,9 @@
 $(function () {
+  $(".contact__item").on("click", function () {
+    $(".contact__item").removeClass("contact__item--active");
+    $(this).addClass("contact__item--active");
+  });
+
   $(".product-tabs__top-item").on("click", function (e) {
     e.preventDefault();
     $(".product-tabs__top-item").removeClass("product-tabs__top-item--active");
